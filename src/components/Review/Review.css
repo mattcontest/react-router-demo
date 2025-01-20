@@ -1,4 +1,4 @@
-/* .review {
+.review {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,4 +38,4 @@ p.review__rating {
   border-radius: 12px;
   border: none;
   margin-top: 20px;
-} */
+}
