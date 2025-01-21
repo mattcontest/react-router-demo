@@ -35,7 +35,6 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/reviews" element={<Reviews reviews={reviews} />} />
         <Route
@@ -61,6 +60,8 @@ function App() {
             </Content>
           }
         />
+
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );

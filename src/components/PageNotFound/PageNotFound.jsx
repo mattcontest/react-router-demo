@@ -1,5 +1,5 @@
 import "./PageNotFound.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function PageNotFound() {
   const navigate = useNavigate();
@@ -8,12 +8,14 @@ function PageNotFound() {
       <h3 className="not-found__title">
         <span>404</span> - Page Not Found!
       </h3>
+
       <p className="not-found__text">
         Uh oh! There&apos:s nothing here... Sorry 🥺
       </p>
-      <button type="button" onClick={() => navigate("/reviews")}>
-        Home
-      </button>
+
+      <Link to="">
+        <button>Home</button>
+      </Link>
     </div>
   );
 }
